@@ -10,6 +10,7 @@ exports.index = function(req, res) {
             title: 'Hary Marthia Nugraha',
             label: 'Menampilkan Product status true',
             data: JSON.stringify(data),
+            userData: req.user
         });
     })
 };
