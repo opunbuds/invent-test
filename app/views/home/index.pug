@@ -1,0 +1,14 @@
+extends ../layouts/default.pug
+
+block page-header
+  h2 #{label}
+
+block content
+    p #{data}
+    
+    a(class='btn btn-primary', href='/delete') Hapus data dn3 status 'false'
+    
+    if message
+        
+        div(class='alert alert-primary') #{message}
+        a(class='btn btn-primary', href='/') kembali
